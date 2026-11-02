@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formal Recruitment Prep · Member Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="mark" href="#dashboard">
+          <span class="mark-leaf" aria-hidden="true"></span>
+          <span>
+            <strong>Recruitment Prep</strong>
+            <em>Member hub</em>
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#dashboard">Dashboard</a>
+          <a href="#profile">Profile</a>
+          <a href="#check-in">Check In</a>
+          <a href="#excusal">Excusal</a>
+          <a href="#feedback">Feedback</a>
+          <a href="#resources">Resources</a>
+          <a href="#calendar">Calendar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Formal recruitment · Internal</p>
+        <h1 id="hero-title">Prepare with intention.<br />Show up as a sister.</h1>
+        <p class="lede">
+          Everything you need for chapter recruitment prep — your profile, daily
+          check-in, events, and resources — in one quiet place.
+        </p>
+      </section>
+
+      <section id="dashboard" class="section">
+        <header class="section-head">
+          <p class="eyebrow">Overview</p>
+          <h2>My Dashboard</h2>
+          <p>A snapshot of where you stand this week.</p>
+        </header>
+
+        <div class="stat-row">
+          <article class="stat-card">
+            <p class="stat-label">Check-in status</p>
+            <p class="stat-value">Present</p>
+            <p class="stat-note">Today · Sisterhood workshop</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">Prep hours</p>
+            <p class="stat-value">6.5</p>
+            <p class="stat-note">Logged this week</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">Next event</p>
+            <p class="stat-value">Tue</p>
+            <p class="stat-note">Conversation practice · 6:30 p.m.</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">Open items</p>
+            <p class="stat-value">2</p>
+            <p class="stat-note">Values sheet · Mock round notes</p>
+          </article>
+        </div>
+
+        <div class="split">
+          <article class="panel">
+            <h3>This week</h3>
+            <ul class="quiet-list">
+              <li>
+                <span>Sun · House walkthrough</span>
+                <span class="pill done">Done</span>
+              </li>
+              <li>
+                <span>Mon · Sisterhood workshop</span>
+                <span class="pill live">Today</span>
+              </li>
+              <li>
+                <span>Tue · Conversation practice</span>
+                <span class="pill">Upcoming</span>
+              </li>
+              <li>
+                <span>Thu · Philanthropy round run-through</span>
+                <span class="pill">Upcoming</span>
+              </li>
+            </ul>
+          </article>
+          <article class="panel">
+            <h3>From leadership</h3>
+            <p>
+              Please arrive 10 minutes early in chapter whites. Phones stay in
+              the designated basket during workshops. If you need to miss any
+              prep, submit an excusal at least 24 hours in advance.
+            </p>
+            <p class="signed">— Recruitment team</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="profile" class="section section-tint">
+        <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">You</p>
+          <h2>My Profile</h2>
+          <p>How you appear to the recruitment team during prep.</p>
+        </header>
+
+        <div class="profile-card">
+          <div class="avatar" aria-hidden="true">JL</div>
+          <div class="profile-body">
+            <h3>Julia Levi</h3>
+            <p class="profile-meta">Junior · Chapter member</p>
+            <dl class="meta-grid">
+              <div>
+                <dt>Recruitment role</dt>
+                <dd>Active sister · Conversation rooms</dd>
+              </div>
+              <div>
+                <dt>Committee</dt>
+                <dd>Sisterhood &amp; logistics</dd>
+              </div>
+              <div>
+                <dt>Shirt size</dt>
+                <dd>S</dd>
+              </div>
+              <div>
+                <dt>Dietary note</dt>
+                <dd>None listed</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section id="check-in" class="section">
+        <header class="section-head">
+          <p class="eyebrow">Attendance</p>
+          <h2>Check In</h2>
+          <p>Confirm you are present before each required prep event.</p>
+        </header>
+
+        <form class="form-card" action="#check-in" method="get">
+          <p class="form-kicker">Monday, November 2 · Sisterhood workshop</p>
+          <label for="checkin-name">Full name</label>
+          <input id="checkin-name" name="name" type="text" value="Julia Levi" />
+
+          <label for="checkin-location">Location</label>
+          <select id="checkin-location" name="location">
+            <option selected>Chapter house · Great room</option>
+            <option>Chapter house · Dining</option>
+            <option>Campus meeting room</option>
+          </select>
+
+          <label for="checkin-note">Optional note</label>
+          <textarea id="checkin-note" name="note" rows="3" placeholder="Running two minutes late from class…"></textarea>
+
+          <button type="submit">Check in for today</button>
+        </form>
+      </section>
+
+      <section id="excusal" class="section section-tint">
+        <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Absence</p>
+          <h2>Request Excusal</h2>
+          <p>Submit at least 24 hours before the event whenever possible.</p>
+        </header>
+
+        <form class="form-card" action="#excusal" method="get">
+          <label for="excusal-event">Event</label>
+          <select id="excusal-event" name="event">
+            <option>Tue · Conversation practice</option>
+            <option>Thu · Philanthropy round run-through</option>
+            <option>Sat · Full mock recruitment</option>
+          </select>
+
+          <label for="excusal-reason">Reason</label>
+          <select id="excusal-reason" name="reason">
+            <option>Class conflict / exam</option>
+            <option>Illness</option>
+            <option>Family obligation</option>
+            <option>Work</option>
+            <option>Other</option>
+          </select>
+
+          <label for="excusal-details">Details</label>
+          <textarea
+            id="excusal-details"
+            name="details"
+            rows="4"
+            placeholder="Share what leadership should know. Keep it brief."
+          ></textarea>
+
+          <button type="submit">Submit excusal request</button>
+        </form>
+        </div>
+      </section>
+
+      <section id="feedback" class="section">
+        <header class="section-head">
+          <p class="eyebrow">After rounds</p>
+          <h2>Feedback</h2>
+          <p>Share observations from workshops and mock recruitment.</p>
+        </header>
+
+        <form class="form-card" action="#feedback" method="get">
+          <label for="feedback-about">This feedback is about</label>
+          <select id="feedback-about" name="about">
+            <option>Today’s workshop</option>
+            <option>Conversation practice</option>
+            <option>House setup / logistics</option>
+            <option>Something else</option>
+          </select>
+
+          <label for="feedback-went">What went well</label>
+          <textarea id="feedback-went" name="went" rows="3"></textarea>
+
+          <label for="feedback-better">What could be clearer</label>
+          <textarea id="feedback-better" name="better" rows="3"></textarea>
+
+          <fieldset class="inline-choice">
+            <legend>May leadership follow up with you?</legend>
+            <label class="choice"><input type="radio" name="followup" value="yes" checked /> Yes</label>
+            <label class="choice"><input type="radio" name="followup" value="no" /> No</label>
+          </fieldset>
+
+          <button type="submit">Send feedback</button>
+        </form>
+      </section>
+
+      <section id="resources" class="section section-tint">
+        <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">Reference</p>
+          <h2>Resources</h2>
+          <p>Read these before mock recruitment. Keep them handy during prep week.</p>
+        </header>
+
+        <ul class="resource-list">
+          <li>
+            <a href="#">
+              <span class="resource-kind">Guide</span>
+              <strong>Conversation values sheet</strong>
+              <span>Talking points aligned with our chapter values — not scripts.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="resource-kind">Schedule</span>
+              <strong>Formal recruitment week overview</strong>
+              <span>Round times, dress, and where to be between events.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="resource-kind">Policy</span>
+              <strong>Member expectations &amp; NPC reminders</strong>
+              <span>What we can and cannot say. Quiet hours. Social media.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="resource-kind">House</span>
+              <strong>Room flow &amp; hospitality notes</strong>
+              <span>Where PNMs enter, sit, and exit. Water and allergen list.</span>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </section>
+
+      <section id="calendar" class="section">
+        <header class="section-head">
+          <p class="eyebrow">Dates</p>
+          <h2>Calendar / Events</h2>
+          <p>Required unless you have an approved excusal.</p>
+        </header>
+
+        <ol class="timeline">
+          <li>
+            <time datetime="2026-11-02">Nov 2</time>
+            <div>
+              <h3>Sisterhood workshop</h3>
+              <p>6:30–8:00 p.m. · Chapter house · Great room</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-03">Nov 3</time>
+            <div>
+              <h3>Conversation practice</h3>
+              <p>6:30–8:30 p.m. · Chapter house · Dining</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-05">Nov 5</time>
+            <div>
+              <h3>Philanthropy round run-through</h3>
+              <p>7:00–9:00 p.m. · Chapter house</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-07">Nov 7</time>
+            <div>
+              <h3>Full mock recruitment</h3>
+              <p>10:00 a.m.–2:00 p.m. · Chapter house · Whites</p>
+            </div>
+          </li>
+          <li>
+            <time datetime="2026-11-09">Nov 9</time>
+            <div>
+              <h3>Rest &amp; reset night</h3>
+              <p>Optional · 7:00 p.m. · Sisterhood space</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Internal use for chapter members preparing for formal recruitment.</p>
+      <p>Questions? Reach the recruitment team directly — this page does not replace chapter chat.</p>
+    </footer>
+  </body>
+</html>
